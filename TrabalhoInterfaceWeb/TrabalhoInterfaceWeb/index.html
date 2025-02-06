@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_IFNoti</title>
+
+    <script src="../TrabalhoInterfaceWeb/data/DadosUsuarios.js" defer></script>
+    <script src="../TrabalhoInterfaceWeb/js/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+        
+        .claro{
+            background-color: white;
+            color: black;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
+        h3 {
+            margin-top: 1rem;
+        }
+        .sistemaLogin{
+            margin: 5% 10%;
+        }
+
+        input{
+            margin-bottom: 1%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>IFNoti</strong>
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" id="mudarCor" target="_blank"> Mudar cor de fundo </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="sistemaLogin">
+        <h1 style="text-align: center;font-size: 2.5rem;"> <b>Faça o login para entrar no sistema de noticias</b></h1>
+        <div class="areaInputs">
+          <input style="border: 1px solid black;margin-top: 2%;" class="input is-medium" type="text" id="inputUsuario" placeholder="jao"><br>
+          <input style="border: 1px solid black;" class="input is-medium" type="text" id="inputSenha" placeholder="123"><br>
+          <button class="button is-primary is-fullwidth"  type="submit" id="logar"> Logar </button> <br>
+          <div class="novoCadastro">
+            <button class="button is-link is-fullwidth"  type="submit" id="cadastrar">cadastrar novo usuario</button>
+          </div>
+        </div>
+        <h3 style="text-align: center;" id="resultadoLogin"></h3> 
+    </div>
+
+    
+    
+</body>
+
+
+</html>

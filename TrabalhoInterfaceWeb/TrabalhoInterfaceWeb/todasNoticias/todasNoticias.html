@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Todas as noticias </title>
+
+
+    <script src="../js/todasNoticias.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            color: white;
+
+        }
+
+        .claro{
+            background-color: white;
+            color: black;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
+        h3 {
+            margin-top: 1rem;
+        }
+        .todasNo{
+            margin: 5% 10%;
+        }
+        .paraCadaNoticia{
+            border: 1px solid grey;
+            background-color: grey; 
+        }
+
+        .todasNoticias{
+            height: 400px;
+            overflow: auto;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>IFNoti</strong>
+          </a>
+        </div>
+    
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="../Pesquisa/Pesquisa.html" target="_blank"> Pesquisar </a>
+            <a class="navbar-item"  href="../todasNoticias/todasNoticias.html" target="_blank"> Todas as noticias do US </a>
+          </div>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" id="mudarCor" target="_blank"> Mudar cor de fundo </a>
+              <a class="navbar-item" id="nomeUSuarioLogado" target="_blank">  </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="todasNo">
+        <h1 style="margin-bottom: 1%;font-size: 2.5rem;"> <b>Todas as noticias</b> </h1>
+        <div class="todasNoticias">
+            
+        </div>
+    </div>
+</body>
+</html>
